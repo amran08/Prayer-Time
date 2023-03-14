@@ -1,9 +1,6 @@
 <?php
 require_once __DIR__ . '/vendor/autoload.php';
 date_default_timezone_set('Asia/Dhaka');
-//$resource = "All Timing 2021.xlsx";
-$resource = "All Timing 2022 V4 - Final.xlsx";
-$resource = "All Timing 2022 V7 - Final.xlsx";
 $resource = "All Timing 2023 V2.xlsx";
 $jsonFileName = "test_prayer_time.json";
 $jsonFileBnName = "test_prayer_time_bn.json";
