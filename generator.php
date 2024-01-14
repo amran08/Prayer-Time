@@ -1,7 +1,10 @@
 <?php
+
+use Shuchkin\SimpleXLSX;
+
 require_once __DIR__ . '/vendor/autoload.php';
 date_default_timezone_set('Asia/Dhaka');
-$resource = "All Timing 2023 V2.xlsx";
+$resource = "All Timing 2024 V1.xlsx";
 $jsonFileName = "test_prayer_time.json";
 $jsonFileBnName = "test_prayer_time_bn.json";
 
@@ -130,7 +133,7 @@ try {
             if (!isset($districtMap[$sheetNames[$q]])) {
                 echo $districtMap[$sheetNames[$q]] . PHP_EOL;
             }
-            array_splice($results, 0, 16);
+            // array_splice($results, 0, 16);
             $final[$districtMap[$sheetNames[$q]]] = $results;
         }
     }
